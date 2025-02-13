@@ -26,26 +26,28 @@ export default function ValentinePage() {
     setAccepted(true);
   };
 
-  const handleNoHover = () => {
-  const buttonWidth = 120; // Button width
-  const buttonHeight = 50; // Button height
+    const handleNoHover = () => {
+        const buttonWidth = 120; // Button width
+        const buttonHeight = 50; // Button height
 
-  const screenWidth = window.innerWidth - buttonWidth;
-  const screenHeight = window.innerHeight - buttonHeight;
+        const screenWidth = window.innerWidth - buttonWidth; // Max horizontal space
+        const screenHeight = window.innerHeight - buttonHeight; // Max vertical space
 
-  const newLeft = Math.random() * screenWidth;
-  const newTop = Math.random() * screenHeight;
+        const newLeft = Math.random() * screenWidth / 2;
+        const newTop = Math.random() * screenHeight / 2;
 
-  setNoPosition({ top: `${newTop}px`, left: `${newLeft}px` });
+        console.log(`New button position -> Top: ${newTop}px, Left: ${newLeft}px`);
 
-  // Create and play sound only if the user has interacted with the page
-  const audio = new Audio(hurtSound); // or use hurtSound if imported
-  audio.volume = 0.5; // Optional: Adjust volume
+        setNoPosition({ top: `${newTop}px`, left: `${newLeft}px` });
 
-  audio.play().catch((error) => {
-    console.log("Audio play failed:", error);
-  });
-};
+        // Create and play sound only if the user has interacted with the page
+        const audio = new Audio(hurtSound); // or use hurtSound if imported
+        audio.volume = 0.5; // Optional: Adjust volume
+
+        audio.play().catch((error) => {
+            console.log("Audio play failed:", error);
+        });
+    };
 
 
   return (
