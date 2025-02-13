@@ -1,0 +1,77 @@
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.valentine-container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.valentine-title {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 2.5rem;
+    color: #d60000;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: 'Minecraft', sans-serif;
+}
+
+.valentine-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.bee-image {
+    width: 300;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.yes-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Minecraft', sans-serif;
+}
+
+.yes-button:hover {
+    background-color: #d60000;
+}
+
+.no-button {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background-color: #8d8888;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    font-family: 'Minecraft', sans-serif;
+    position: absolute;
+}
