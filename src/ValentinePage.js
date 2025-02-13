@@ -54,7 +54,7 @@ export default function ValentinePage() {
         <>
           <h1 className="valentine-title">will u be my valentine</h1>
           
-          <img src={tulipImage} className="valentine-image" alt="tulip pic"/>
+          <img src={tulipImage} className="valentine-image" alt=""/>
 
           <div className="button-container">
             <button className="yes-button" onClick={handleYesClick}>
@@ -73,7 +73,7 @@ export default function ValentinePage() {
         <>
           <h1 className="valentine-title">omg yay pookie see u tmr ly</h1>
 
-          <img src={beeImage} className="bee-image" alt="bee image"/>
+          <img src={beeImage} className="bee-image" alt=""/>
         </>
       )}
     </div>
