@@ -12,7 +12,7 @@ export default function ValentinePage() {
     useEffect(() => {
     const unlockAudio = () => {
         const silentAudio = new Audio();
-        silentAudio.muted = true; // Create a muted sound
+        silentAudio.muted = true;
         silentAudio.play().then(() => {
         document.removeEventListener("click", unlockAudio);
         }).catch(error => console.log("Silent unlock failed:", error));
@@ -27,11 +27,11 @@ export default function ValentinePage() {
   };
 
     const handleNoHover = () => {
-        const buttonWidth = 120; // Button width
-        const buttonHeight = 50; // Button height
+        const buttonWidth = 120; 
+        const buttonHeight = 50; 
 
-        const screenWidth = window.innerWidth - buttonWidth; // Max horizontal space
-        const screenHeight = window.innerHeight - buttonHeight; // Max vertical space
+        const screenWidth = window.innerWidth - buttonWidth;
+        const screenHeight = window.innerHeight - buttonHeight;
 
         const newLeft = Math.random() * screenWidth / 2;
         const newTop = Math.random() * screenHeight / 2;
@@ -41,8 +41,8 @@ export default function ValentinePage() {
         setNoPosition({ top: `${newTop}px`, left: `${newLeft}px` });
 
         // Create and play sound only if the user has interacted with the page
-        const audio = new Audio(hurtSound); // or use hurtSound if imported
-        audio.volume = 0.5; // Optional: Adjust volume
+        const audio = new Audio(hurtSound); 
+        audio.volume = 0.5;
 
         audio.play().catch((error) => {
             console.log("Audio play failed:", error);
