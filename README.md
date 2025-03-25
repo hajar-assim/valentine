@@ -1,6 +1,6 @@
 # Valentine's Card
 
-A tiny Minecraft-themed Valentine’s Day card made with React. Built quickly for fun and good vibes.
+A tiny Minecraft-themed Valentine’s Day card made with JS. Built quickly for fun and good vibes.
 
 💓 [Live Site](https://willyoubemyvalentinehh.netlify.app/)
 
